@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML= "Form had been submitted";
+        }
+    </script>
 </head>
 <body>
     <div>
@@ -21,7 +26,11 @@
        <label for="name">Tell me about yourself: </label>
        <input type="text">
     </form>
-    <div></div>
+    <div>
+        <p id="demo">A paragraph</p>
+        <button type="button" onclick="myFunction()">Submit Form</button>
+    </div>
+    </div>
 
 </body>
 </html>
